@@ -1,6 +1,4 @@
 class SimpleCalculator:
-    """A simple calculator class that supports basic arithmetic operations."""
-
     def add(self, a, b):
         return a + b
 
@@ -12,5 +10,5 @@ class SimpleCalculator:
 
     def divide(self, a, b):
         if b == 0:
-            return None
+            raise ZeroDivisionError("Cannot divide by zero")
         return a / b
